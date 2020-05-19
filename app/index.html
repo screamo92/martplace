@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MartPlace</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
 
- <div class="box">Hello my name is Rustam I'm Frontend Developer</div>
- 
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="images/logo.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="header__buttons">
+                        <button class="header__btn">Become a Seller</button>
+                    </div>
+                    <div class="header__box">
+                        <button class=" header__box-btn header__box-link">
+                            <img class="header__box-icon" src="images/header-icon1.png" alt="img">
+                            <span class="header__numb header__numb--coral">25</span>
+                        </button>
+                        <a class="header__box-link" href="#">
+                            <img class="header__box-icon" src="images/header-icon2.png" alt="img">
+                            <span class="header__numb header__numb--green">6</span>
+                        </a>
+                        <a class="header__box-link" href="#">
+                            <img class="header__box-icon" src="images/header-icon3.png" alt="img">
+                            <span class="header__numb header__numb--blue">2</span>
+                        </a>
+                    </div>
+                    <a class="header__profile" href="#">
+                        <div class="header__avatar" style="background-image: url(images/header-avatar.jpg);"></div>
+                        <div class="header__account">
+                            <div class="header__name">
+                                Taofiq Hakim
+                            </div>
+                            <div class="header__price">$20.45</div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="header__menu">
+
+            <div class="container">
+                <div class="header__menu-inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__items">
+                                <a class="menu__link" href="#">
+                                    home
+                                </a>
+                            </li>
+                            <li class="menu__items">
+                                <a class="menu__link" href="#">
+                                    all
+                                </a>
+                            </li>
+                            <li class="menu__items">
+                                <a class="menu__link" href="#">
+                                    products
+                                </a>
+                            </li>
+                            <li class="menu__items">
+                                <a class="menu__link" href="#">
+                                    wordpress
+                                </a>
+                            </li>
+                            <li class="menu__items">
+                                <a class="menu__link" href="#">
+                                    festures
+                                </a>
+                            </li>
+                            <li class="menu__items">
+                                <a class="menu__link" href="#">
+                                    pages
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="search">
+                        <form class="search__form">
+                            <input type="text" placeholder="Search product here...">
+                            <button class="search__btn" type="submit">
+                                <img class="search__icon" src="images/search-icon.png" alt="img">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
