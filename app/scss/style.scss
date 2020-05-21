@@ -130,9 +130,9 @@
     }
 }
 
-.search {
+.menu__search {
     flex: 0 1 360px;
-    &__form {
+    &-form {
         max-width: 360px;
         position: relative;
 
@@ -146,9 +146,13 @@
             color: #898f96;
             outline: none;
             padding: 0 95px 0 25px;
+            &::placeholder {
+                color: #898f96;
+                font-size: 15px;
+            }
         }
     }
-    &__btn {
+    &-btn {
         background-color: #0674ec;
         position: absolute;
         top: 0px;
@@ -188,32 +192,84 @@
     }
     &__link {
         font-size: 16px;
-        padding: 21px 32px;
+        padding: 19px 32px;
         border-radius: 22px;
-        &--all {
-            background-color: #fff;
+        margin: 0 30px 235px 0;
+        background-color: #fff;
+        color: $blue;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        &--popular {
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
         }
     }
 }
-.Rectangle_237 {
-  background-color: rgb(255, 255, 255);
-  
-  position: absolute;
-  left: 755px;
-  top: 615px;
-  width: 190px;
-  height: 55px;
-  z-index: 716;
+// end products
+
+//start search
+.search {
+    &__inner {
+        background-color: #fff;
+        margin-top: -74px;
+        border-radius: 6px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+        font-size: 16px;
+        position: relative;
+    }
+    &__form {
+        max-width: 847px;
+        padding: 40px 0 40px 40px;
+        position: relative;
+
+        input {
+            width: 100%;
+
+            padding: 17px 28px;
+            color: #676767;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            border-right: none;
+            outline: none;
+            margin-right: 30px;
+        }
+    }
+    select {
+        position: absolute;
+
+        color: #555555;
+        padding: 15.5px 28px;
+        border: 1px solid #dcdcdc;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        top: 40px;
+        right: 1px;
+        outline: none;
+    }
+    &__btn {
+        position: absolute;
+        top: 38px;
+        right: -252px;
+        background-color: #0674ec;
+        color: #fff;
+        padding: 16px 66px;
+        text-align: center;
+        border-radius: 4px;
+        outline: none;
+    }
+ 
 }
-.Rectangle_237 {
-  border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  left: 975px;
-  top: 615px;
-  width: 188px;
-  height: 53px;
-  z-index: 720;
+
+.search__inner::before {
+       content: "";
+        position: absolute;
+        border-radius: 6px;
+        background-color: red;
+        opacity: 50%;
+        min-height: 35px;
+        max-width: 1110px;;
+    
 }
+
+//end products
+
