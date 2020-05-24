@@ -3,3 +3,8 @@ $blue: #0674ec;
 $text: #333333;
 $coral: #ff6a6c;
 $green: #62d03b;
+
+@mixin f500 {
+   font-family: "Quicksand-Medium";
+    font-weight: 500;
+}

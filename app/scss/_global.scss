@@ -13,6 +13,20 @@ a {
    text-decoration: none;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+h1,h2,h3,h4,h5,h5,h6 {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
 ul,
 li {
    margin: 0;
@@ -31,4 +45,8 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+button {
+    padding: 0;
 }
