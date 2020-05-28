@@ -335,26 +335,102 @@
 
 .weekly {
     background-color: #eff1f5;
-    padding-top: 120px;
+    padding: 120px 0;
     &__title {
         background-color: #fff;
         padding: 42px 195px 40px 29px;
         font-size: 30px;
         margin-bottom: 50px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     }
 }
 
 .weekly-slider {
     &__item {
         display: flex;
+        background-color: #fff;
+        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+        margin-bottom: 120px;
     }
 
     &__img {
-        width: 550px;
-        height: 450px;
+        max-width: 550px;
+        min-height: 450px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
     &__content {
-        width: 50%;
+        padding: 48px 55px 0 58px;
+        max-width: 586px;
+        p {
+            font-size: 15px;
+            color: #555555;
+            line-height: 30px;
+            max-width: 450px;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        a {
+            color: #000;
+            font-size: 24px;
+            @include f500;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 33px;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.weekly-slider__name {
+    margin-right: 43px;
+    font-size: 15px;
+}
+
+.weekly-slider__category {
+    font-size: 15px;
+    color: #7347c1;
+}
+
+.weekly-slider__tags {
+    font-size: 15px;
+    line-height: 30px;
+    color: #868c96;
+    margin-bottom: 44px;
+    span {
+        background-color: #f1f3f6;
+        padding: 6px 15px;
+        border-radius: 25px;
+        & + & {
+            margin-left: 8px;
+        }
+    }
+}
+
+.weekly-slider__price {
+    max-width: 485px;
+    border-top: 1px solid #ececec;
+    padding-top: 23px;
+    margin-bottom: 25px;
+    a {
+        background-color: $blue;
+        color: #fff;
+        @include f500;
+        line-height: 30px;
+        font-size: 15px;
+        padding: 1px 20px;
+        border-radius: 25px;
     }
 }
 
